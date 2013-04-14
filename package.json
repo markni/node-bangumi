@@ -1,0 +1,14 @@
+{
+	"name": "bangumi",
+	"version": "v0.1.0",
+	"description": "Bangumi API client library for node.js",
+	"keywords": ["bangumi"],
+	"homepage": "*",
+	"author": "ruocaled",
+	"dependencies":
+		{
+			"querystring": ">=0.2.0"
+		},
+	"engines": ["node >=0.6.0"],
+	"main": "./lib/bangumi"
+}
