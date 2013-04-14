@@ -1,3 +1,5 @@
+//just some random examples of how to use API
+
 var Bangumi = require('./lib/bangumi');
 
 var options = {
@@ -8,28 +10,32 @@ var b = new Bangumi(options);
 
 var a = "replacethis";
 
-b.auth({username:'nodebangumi',password:'node-bangumi'},function(err,data){
-	console.log(data);
-})
-
-//b.calendar({},function(err,data){
-//	console.log(data)
-//});
-
-//b.subject(290,{responseGroup:"medium",a:"a"},function(err,data){
-//	console.log(data);
+//b.auth({username:'nodebangumi',password:'node-bangumi'},function(err,data){
+//	console.log(JSON.stringify(data));
 //})
 
-//b.ep(290,{},function(err,data){
-//	console.log(data);
+//b.calendar(function(err,data){
+//	console.log(JSON.stringify(data));
+//});
+
+//b.user('sai',function(err,data){
+//	console.log(JSON.stringify(data));
+//})
+
+//b.subject(290,{responseGroup:"medium",a:"a"},function(err,data){
+//	console.log(JSON.stringify(data));
+//})
+
+//b.ep(290,function(err,data){
+//	console.log(JSON.stringify(data));
 //})
 
 //b.collectionByUser('sai',{cat:"watching"},function(err,data){
-//	console.log(data);
+//	console.log(JSON.stringify(data));
 //})
 
 //b.collectionBySubject(290,{auth:a},function(err,data){
-//	console.log(data);
+//	console.log(JSON.stringify(data));
 //});
 
 //var p = {
@@ -40,13 +46,13 @@ b.auth({username:'nodebangumi',password:'node-bangumi'},function(err,data){
 //		}
 //b.search('天元突破',p,function(err,data){
 //	console.log(err);
-//	console.log(data);
+//	console.log(JSON.stringify(data));
 //});
 
 
 
 //b.createCollection(290,{auth:a,status:'do',comment:'好',tags:'fate',rating:5},function(err,data){
-//	console.log(data);
+//	console.log(JSON.stringify(data));
 //});
 
 //b.progress('ruocaled',{auth:a},function(err,data){
