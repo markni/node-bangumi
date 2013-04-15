@@ -13,5 +13,15 @@ Getting Started
 	});
 
 
+### Examples of Usage
 
+#### Search
+	b.search('天元突破',{
+		responseGroup:"small",
+		max_results:2,
+		start:1,
+		type:2
+	},function(err,data){
+		console.log(JSON.stringify(data));
+	});
 
