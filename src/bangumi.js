@@ -1,12 +1,14 @@
 /**
  * Bangumi API client library for node.js.
  * @module Bangumi
- * @author ruocaled
  * @version 1.0.0
  */
 
 var	VERSION = '1.0.0';
-var http = require('http');
+var protocols = {
+  http: require('http'),
+  https: require('https'),
+};
 var querystring = require('querystring');
 
 
@@ -41,7 +43,7 @@ module.exports = Bangumi;
 
 
 /**
- * A general GET reqeust method for Bangumi API
+ * A general GET request method for Bangumi API
  * @method get
  * @param url {string} base GET request path
  * @param params {object} parameters used for GET query string
@@ -65,16 +67,20 @@ Bangumi.prototype.get = function(url, params, callback) {
   if (this.options.hasOwnProperty('app_id')) params = Utils.merge({source:this.options.app_id}, params);
 
 
+  var protocolName = this.options.protocol || 'https';
+
+
   var options = {
     host: this.options.rest_base,
-    path: url + '?' + querystring.stringify(params),
+    path: url + (querystring.stringify(params) ? '?' : '') + querystring.stringify(params),
     method: 'GET',
     headers: this.options.headers
   };
 
   if (this.options.hasOwnProperty('access_token')) options.headers['Authorization'] = 'Bearer ' + this.options.access_token;
 
-  var req = http.request(options, function(res){
+  var req = protocols[protocolName].request(options, function(res){
+    console.log(JSON.stringify(options,null,'  '));
     var data = '';
     res.setEncoding('utf8');
 
@@ -123,6 +129,8 @@ Bangumi.prototype.post = function(url, params, callback) {
     throw 'FAIL: INVALID URL.';
   }
 
+  var protocolName = this.options.protocol || 'https';
+
   var post_data =  querystring.stringify(params);
 
   var headers = Utils.merge({'Content-Length': post_data.length}, this.options.headers);
@@ -137,7 +145,7 @@ Bangumi.prototype.post = function(url, params, callback) {
   if (this.options.hasOwnProperty('access_token')) options.headers['Authorization'] = 'Bearer ' + this.options.access_token;
   if (this.options.hasOwnProperty('app_id')) options.path += '?' + querystring.stringify({source: this.options.app_id});
 
-  var req = http.request(options, function(res){
+  var req = protocols[protocolName].request(options, function(res){
     var data = '';
     res.on('data', function (chunk) {
       data += chunk;
