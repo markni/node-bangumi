@@ -1,6 +1,6 @@
 Installation
 -----------------------
-	npm install bangumi
+	npm install bangumi --save
 
 
 Getting Started
@@ -9,7 +9,7 @@ Getting Started
 ### Setup API
 	var Bangumi = require('bangumi');
 	var bgm = new Bangumi({
-        app_id: "fill in your app id here"
+        access_token: "fill in your access token here"
 	});
 
 
@@ -25,3 +25,5 @@ Getting Started
 		console.log(JSON.stringify(data));
 	});
 
+### Documentation
+    See [https://github.com/bangumi/api]

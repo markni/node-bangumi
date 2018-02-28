@@ -1,14 +1,14 @@
 //just some random examples of how to use API
 
-var Bangumi = require('./lib/bangumi');
+var Bangumi = require('./src/bangumi');
 
 var options = {
-	app_id : "replacethis"
+  access_token : 'da2f0a0789a048ee69bb1cda2d8743b64eb86894'
 };
 
 var b = new Bangumi(options);
 
-var a = "replacethis";
+var a = 'replacethis';
 
 //b.auth({username:'nodebangumi',password:'node-bangumi'},function(err,data){
 //	console.log(JSON.stringify(data));
@@ -18,9 +18,9 @@ var a = "replacethis";
 //	console.log(JSON.stringify(data));
 //});
 
-//b.user('sai',function(err,data){
-//	console.log(JSON.stringify(data));
-//})
+// b.user('sai',function(err,data){
+// 	console.log(JSON.stringify(data, null, '  '));
+// })
 
 //b.subject(290,{responseGroup:"medium",a:"a"},function(err,data){
 //	console.log(JSON.stringify(data));

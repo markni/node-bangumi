@@ -1,1 +1,1 @@
-module.exports = require('./lib/bangumi');
+module.exports = require('./src/bangumi');
