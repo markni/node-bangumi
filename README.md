@@ -15,7 +15,10 @@ Getting Started
 
 ### Examples of Usage
 
-#### Search
+#### Set up custom promise library
+    b.setPromiseProvider(require('bluebird'));
+
+#### Callback
 	b.search('天元突破',{
 		responseGroup:"small",
 		max_results:2,
@@ -25,5 +28,15 @@ Getting Started
 		console.log(JSON.stringify(data));
 	});
 
-### Documentation
+#### Promise
+	b.search('天元突破',{
+		responseGroup:"small",
+		max_results:2,
+		start:1,
+		type:2
+	}).then(function(data){
+		console.log(JSON.stringify(data));
+	});
+
+### More Documentation
     See [https://github.com/bangumi/api]
