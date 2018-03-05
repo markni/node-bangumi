@@ -39,4 +39,4 @@ Getting Started
 	});
 
 ### More Documentation
-    See [https://github.com/bangumi/api]
+See https://github.com/bangumi/api for more details
