@@ -1,14 +1,32 @@
 {
-	"name": "bangumi",
-	"version": "v0.1.0",
-	"description": "Bangumi API client library for node.js",
-	"keywords": ["bangumi"],
-	"homepage": "*",
-	"author": "ruocaled",
-	"dependencies":
-		{
-			"querystring": ">=0.2.0"
-		},
-	"engines": ["node >=0.6.0"],
-	"main": "./lib/bangumi"
+  "name": "bangumi",
+  "version": "1.0.0",
+  "description": "Bangumi API client library for nodejs",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fix": "node node_modules/eslint/bin/eslint.js . --fix",
+    "docs": "./node_modules/.bin/jsdoc ./lib/bangumi.js -d ./docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markni/node-bangumi.git"
+  },
+  "keywords": [
+    "bangumi",
+    "api"
+  ],
+  "author": "ruocaled",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markni/node-bangumi/issues"
+  },
+  "homepage": "https://github.com/markni/node-bangumi#readme",
+  "devDependencies": {
+    "eslint": "^4.18.1",
+    "jsdoc": "^3.5.5"
+  }
 }

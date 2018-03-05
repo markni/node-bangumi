@@ -1,6 +1,6 @@
 Installation
 -----------------------
-	npm install bangumi
+	npm install bangumi --save
 
 
 Getting Started
@@ -9,14 +9,17 @@ Getting Started
 ### Setup API
 	var Bangumi = require('bangumi');
 	var bgm = new Bangumi({
-        app_id: "fill in your app id here"
+        access_token: "fill in your access token here"
 	});
 
 
 ### Examples of Usage
 
-#### Search
-	b.search('天元突破',{
+#### Set up custom promise library
+    bgm.setPromiseProvider(require('bluebird'));
+
+#### Using callback
+	bgm.search('天元突破',{
 		responseGroup:"small",
 		max_results:2,
 		start:1,
@@ -25,3 +28,15 @@ Getting Started
 		console.log(JSON.stringify(data));
 	});
 
+#### Using promise
+	bgm.search('天元突破',{
+		responseGroup:"small",
+		max_results:2,
+		start:1,
+		type:2
+	}).then(function(data){
+		console.log(JSON.stringify(data));
+	});
+
+### Documentation
+See [docs](docs) and https://github.com/bangumi/api
