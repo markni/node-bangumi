@@ -16,10 +16,10 @@ Getting Started
 ### Examples of Usage
 
 #### Set up custom promise library
-    b.setPromiseProvider(require('bluebird'));
+    bgm.setPromiseProvider(require('bluebird'));
 
 #### Callback
-	b.search('天元突破',{
+	bgm.search('天元突破',{
 		responseGroup:"small",
 		max_results:2,
 		start:1,
@@ -29,7 +29,7 @@ Getting Started
 	});
 
 #### Promise
-	b.search('天元突破',{
+	bgm.search('天元突破',{
 		responseGroup:"small",
 		max_results:2,
 		start:1,
