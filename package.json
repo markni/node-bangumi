@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "fix": "node node_modules/eslint/bin/eslint.js . --fix"
+    "fix": "node node_modules/eslint/bin/eslint.js . --fix",
+    "docs": "./node_modules/.bin/jsdoc ./lib/bangumi.js -d ./docs"
   },
   "repository": {
     "type": "git",
@@ -18,13 +19,14 @@
     "bangumi",
     "api"
   ],
-  "author": "",
+  "author": "ruocaled",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/markni/node-bangumi/issues"
   },
   "homepage": "https://github.com/markni/node-bangumi#readme",
   "devDependencies": {
-    "eslint": "^4.18.1"
+    "eslint": "^4.18.1",
+    "jsdoc": "^3.5.5"
   }
 }
