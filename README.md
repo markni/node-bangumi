@@ -18,7 +18,7 @@ Getting Started
 #### Set up custom promise library
     bgm.setPromiseProvider(require('bluebird'));
 
-#### Callback
+#### Using callback
 	bgm.search('天元突破',{
 		responseGroup:"small",
 		max_results:2,
@@ -28,7 +28,7 @@ Getting Started
 		console.log(JSON.stringify(data));
 	});
 
-#### Promise
+#### Using promise
 	bgm.search('天元突破',{
 		responseGroup:"small",
 		max_results:2,
@@ -38,5 +38,5 @@ Getting Started
 		console.log(JSON.stringify(data));
 	});
 
-### More Documentation
-See https://github.com/bangumi/api for more details
+### Documentation
+See [docs](docs) and https://github.com/bangumi/api
