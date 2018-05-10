@@ -1,3 +1,5 @@
+An simple Node.js client library for [Bangumi](https://bgm.tv) [REST API](https://github.com/bangumi/api).
+
 Installation
 -----------------------
 	npm install bangumi --save

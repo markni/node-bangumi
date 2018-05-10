@@ -1,7 +1,7 @@
 {
   "name": "bangumi",
   "version": "1.0.0",
-  "description": "Bangumi API client library for nodejs",
+  "description": "A simple Node.js client library for Bangumi REST API.",
   "main": "index.js",
   "directories": {
     "lib": "lib"
