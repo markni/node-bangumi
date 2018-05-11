@@ -278,7 +278,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line17">line 17</a>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line18">line 18</a>
     </li></ul></dd>
     
 
@@ -528,7 +528,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line309">line 309</a>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line327">line 327</a>
     </li></ul></dd>
     
 
@@ -885,7 +885,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line327">line 327</a>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line345">line 345</a>
     </li></ul></dd>
     
 
@@ -1038,7 +1038,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line200">line 200</a>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line201">line 201</a>
     </li></ul></dd>
     
 
@@ -1286,7 +1286,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line281">line 281</a>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line299">line 299</a>
     </li></ul></dd>
     
 
@@ -1462,7 +1462,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line236">line 236</a>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line237">line 237</a>
     </li></ul></dd>
     
 
@@ -1710,7 +1710,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line295">line 295</a>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line313">line 313</a>
     </li></ul></dd>
     
 
@@ -1970,7 +1970,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line224">line 224</a>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line225">line 225</a>
     </li></ul></dd>
     
 
@@ -2149,7 +2149,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line211">line 211</a>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line212">line 212</a>
     </li></ul></dd>
     
 
@@ -2409,7 +2409,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line249">line 249</a>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line250">line 250</a>
     </li></ul></dd>
     
 
@@ -2452,6 +2452,294 @@
     
 
 
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="fetchUserCollections"><span class="type-signature"></span>fetchUserCollections<span class="signature">(username, subject_type, params, callback)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A GET method that gets overview of user's collection by username and subject type
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>username</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">username or uid of target username</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>subject_type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">type of subject</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>max_results</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">upper limit of amount of subjects client can fetch (max 25)</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">callback function</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line266">line 266</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>bgm.fetchUserCollections('sai', 'real', {max_results: 1}).then(console.log).catch(console.error)</code></pre>
 
 
 
@@ -2608,7 +2896,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line117">line 117</a>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line118">line 118</a>
     </li></ul></dd>
     
 
@@ -2789,7 +3077,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line187">line 187</a>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line188">line 188</a>
     </li></ul></dd>
     
 
@@ -3148,7 +3436,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line266">line 266</a>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line284">line 284</a>
     </li></ul></dd>
     
 
@@ -3301,7 +3589,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line50">line 50</a>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line51">line 51</a>
     </li></ul></dd>
     
 
@@ -3566,7 +3854,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line341">line 341</a>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line359">line 359</a>
     </li></ul></dd>
     
 
@@ -3814,7 +4102,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line355">line 355</a>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line373">line 373</a>
     </li></ul></dd>
     
 
@@ -3882,7 +4170,7 @@
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Sun Mar 04 2018 18:40:17 GMT-0800 (Pacific Standard Time)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Thu May 10 2018 17:47:21 GMT-0700 (Pacific Daylight Time)
 </footer>
 
 <script> prettyPrint(); </script>
