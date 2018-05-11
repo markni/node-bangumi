@@ -2,22 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: bangumi.js</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>bangumi.js - Documentation</title>
 
-    <script src="scripts/prettify/prettify.js"> </script>
-    <script src="scripts/prettify/lang-css.js"> </script>
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
     <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
 </head>
-
 <body>
 
-<div id="main">
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
 
-    <h1 class="page-title">Source: bangumi.js</h1>
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html">Bangumi</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#auth">auth</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#createCollection">createCollection</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#fetchCalendar">fetchCalendar</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#fetchCollection">fetchCollection</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#fetchEps">fetchEps</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#fetchProgress">fetchProgress</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#fetchSubject">fetchSubject</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#fetchSubjectEps">fetchSubjectEps</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#fetchUser">fetchUser</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#fetchUserCollection">fetchUserCollection</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#fetchUserCollections">fetchUserCollections</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#fetchUserCollectionsStatus">fetchUserCollectionsStatus</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#get">get</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#post">post</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#search">search</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#setAccessToken">setAccessToken</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#setPromiseProvider">setPromiseProvider</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#updateEpStatus">updateEpStatus</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#updateWatchedEps">updateWatchedEps</a></span></li><li class="nav-heading">Modules</li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-bangumi.html">bangumi</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">bangumi.js</h1>
+    
 
     
 
@@ -262,7 +275,7 @@ Bangumi.prototype.fetchUser = function(username, callback){
 
 /**
  * A GET method that gets a details of a subject by id
- * @param subject_id {number} id of target subject
+ * @param subject_id {integer} id of target subject
  * @param [params] {object}
  * @param [params.responseGroup] {string} accept [small|medium|large]
  * @param [callback] {function} callback function
@@ -275,7 +288,7 @@ Bangumi.prototype.fetchSubject = function(subject_id, params, callback){
 
 /**
  * A GET method that gets a list of episodes of a subject by subject id
- * @param subject_id {number} id of target subject
+ * @param subject_id {integer} id of target subject
  * @param [callback] {function} callback function
  * @returns {Promise}
  * @deprecated use fetchSubjectEps
@@ -287,7 +300,7 @@ Bangumi.prototype.fetchEps = function(subject_id, callback){
 
 /**
  * A GET method that gets a list of episodes of a subject by subject id
- * @param subject_id {number} id of target subject
+ * @param subject_id {integer} id of target subject
  * @param [callback] {function} callback function
  * @returns {Promise}
  * @example
@@ -320,7 +333,7 @@ Bangumi.prototype.fetchUserCollection = function(username, params, callback){
  * @param username {string} username or uid of target username
  * @param subject_type {string} type of subject
  * @param [params] {object}
- * @param [params.max_results] {number} upper limit of amount of subjects client can fetch (max 25)
+ * @param [params.max_results] {integer} upper limit of amount of subjects client can fetch (max 25)
  * @param [callback] {function} callback function
  * @returns {Promise}
  * @example
@@ -360,9 +373,9 @@ Bangumi.prototype.fetchUserCollectionsStatus = function(username, params, callba
  * @param keywords {string} query string for search
  * @param [params] {object}
  * @param [params.responseGroup] {string} accept [small|medium|large]
- * @param [params.type] {number} accept [1|2|3|4|6] (1.book 2.anime 3.music 4.game 5.live action)
- * @param [params.start] {number} result start index, used for paging
- * @param [params.max_results] {number} the number of entries returns, max 25
+ * @param [params.type] {integer} accept [1|2|3|4|6] (1.book 2.anime 3.music 4.game 5.live action)
+ * @param [params.start] {integer} result start index, used for paging
+ * @param [params.max_results] {integer} the number of entries returns, max 25
  * @param [callback] {function} callback function
  * @returns {Promise}
  * @example
@@ -379,7 +392,7 @@ Bangumi.prototype.search = function(keywords, params, callback){
  * A GET method that get lists of episodes that user already watched, sorted by subject id
  * @param username {string|number} username or uid of target username
  * @param [params] {object}
- * @param [params.subject_id] {number} the id of the subject user wants fetch progress
+ * @param [params.subject_id] {integer} the id of the subject user wants fetch progress
  * @param [params.auth] {string} authentication string used for validation of user identity, deprecated
  * @param [callback] {function} callback function
  * @returns {Promise}
@@ -409,7 +422,7 @@ Bangumi.prototype.auth = function(params, callback){
 
 /**
  * A GET method that get current user's collection details on specific subject by subject id
- * @param subject_id {number} id of target subject
+ * @param subject_id {integer} id of target subject
  * @param [params] {object}
  * @param [params.auth] {string} authentication string used for validation of user identity, deprecated
  * @param [callback] {function} callback function
@@ -424,13 +437,13 @@ Bangumi.prototype.fetchCollection = function(subject_id, params, callback){
 
 /**
  * A POST method that updates user's status on specific subject by subject id
- * @param subject_id {number} id of target subject
+ * @param subject_id {integer} id of target subject
  * @param [params] {object}
  * @param [params.status=wish] {string} accept [wish|collect|do|on_hold|dropped]
  * @param [params.comment] {string} comment on target subject status update
  * @param [params.tags] {string} tags on target subject status update, separated by comma
- * @param [params.rating] {number} star rating on target subject, accept [0~10]
- * @param [params.privacy] {number} privacy control of this action, accepts [0|1] (0.open, 1.private)
+ * @param [params.rating] {integer} star rating on target subject, accept [0~10]
+ * @param [params.privacy] {integer} privacy control of this action, accepts [0|1] (0.open, 1.private)
  * @param [callback] {function} callback function
  * @returns {Promise}
  * @example
@@ -443,7 +456,7 @@ Bangumi.prototype.createCollection = function(subject_id, params, callback){
 
 /**
  * A POST method that updates user's status on specific episode by episode id
- * @param ep_id {number} id of target episode
+ * @param ep_id {integer} id of target episode
  * @param status {string} accept [watched|queue|drop|remove]
  * @param [params] {object}
  * @param [params.ep_id] {string} a list of episode ids for batch processing, separated by comma
@@ -460,7 +473,7 @@ Bangumi.prototype.updateEpStatus = function(ep_id, status, params, callback){
 
 /**
  * A POST method that marks episode 1 to target number as watched
- * @param subject_id {number} id of target subject
+ * @param subject_id {integer} id of target subject
  * @param params {object}
  * @param params.watched_eps {string} the number of episodes that user currently have watched
  * @param [params.watched_vols] {string} the number of episodes that user currently have watched
@@ -481,17 +494,13 @@ Bangumi.prototype.updateWatchedEps = function(subject_id, params, callback){
 
 </div>
 
-<nav>
-    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-bangumi.html">bangumi</a></li></ul><h3>Classes</h3><ul><li><a href="module-bangumi-Bangumi.html">Bangumi</a></li></ul>
-</nav>
-
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Fri May 11 2018 09:01:29 GMT-0700 (Pacific Daylight Time)
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Fri May 11 2018 10:08:53 GMT-0700 (Pacific Daylight Time) using the Minami theme.
 </footer>
 
-<script> prettyPrint(); </script>
-<script src="scripts/linenumber.js"> </script>
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
 </body>
 </html>

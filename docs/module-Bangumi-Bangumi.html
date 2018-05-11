@@ -2,22 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Class: Bangumi</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bangumi - Documentation</title>
 
-    <script src="scripts/prettify/prettify.js"> </script>
-    <script src="scripts/prettify/lang-css.js"> </script>
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
     <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
 </head>
-
 <body>
 
-<div id="main">
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
 
-    <h1 class="page-title">Class: Bangumi</h1>
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html">Bangumi</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#auth">auth</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#createCollection">createCollection</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#fetchCalendar">fetchCalendar</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#fetchCollection">fetchCollection</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#fetchEps">fetchEps</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#fetchProgress">fetchProgress</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#fetchSubject">fetchSubject</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#fetchSubjectEps">fetchSubjectEps</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#fetchUser">fetchUser</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#fetchUserCollection">fetchUserCollection</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#fetchUserCollections">fetchUserCollections</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#fetchUserCollectionsStatus">fetchUserCollectionsStatus</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#get">get</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#post">post</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#search">search</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#setAccessToken">setAccessToken</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#setPromiseProvider">setPromiseProvider</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#updateEpStatus">updateEpStatus</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-bangumi-Bangumi.html#updateWatchedEps">updateWatchedEps</a></span></li><li class="nav-heading">Modules</li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-bangumi.html">bangumi</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">Bangumi</h1>
+    
 
     
 
@@ -28,8 +41,11 @@
 
 <header>
     
-        <h2><span class="attribs"><span class="type-signature"></span></span>
-            <span class="ancestors"><a href="module-bangumi.html">bangumi</a>~</span>Bangumi<span class="signature">(options<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h2>
+        <h2>
+            <span class="ancestors"><a href="module-bangumi.html">bangumi</a>~</span>
+        
+        Bangumi
+        </h2>
         
     
 </header>
@@ -38,211 +54,14 @@
     <div class="container-overview">
     
         
+<div class="section-method">
 
     
 
-    
     <h4 class="name" id="Bangumi"><span class="type-signature"></span>new Bangumi<span class="signature">(options<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
-    
 
     
 
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>options</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">
-                <h6>Properties</h6>
-                
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>app_id</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">app id used for identify source, deprecated</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>access_token</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">access token used for identify user</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>protocol</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">http protocol used for api</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-            </td>
-        </tr>
-
-    
-    </tbody>
-</table>
 
 
 
@@ -297,65 +116,6 @@
 
 
 
-
-
-
-
-
-
-
-
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>var Bangumi = require('bangumi');var bgm = new Bangumi({  access_token: "123456"});</code></pre>
-
-
-
-    
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <h3 class="subsection-title">Methods</h3>
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="auth"><span class="type-signature"></span>auth<span class="signature">(params, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    A POST method that login user with username and password, and returns auth string
-</div>
-
-
-
-
-
-
-
-
-
     <h5>Parameters:</h5>
     
 
@@ -383,116 +143,13 @@
 
         <tr>
             
-                <td class="name"><code>params</code></td>
+                <td class="name"><code>options</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">
-                <h6>Properties</h6>
-                
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>username</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">username or uid of target username</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>password</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">password for target user</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-            </td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>callback</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
+<span class="param-type"><code>object</code></span>
 
 
             
@@ -512,13 +169,207 @@
 
             
 
-            <td class="description last">callback function</td>
+            <td class="description last">
+                
+                
+                    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>app_id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>string</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                app id used for identify source, deprecated
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>access_token</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>string</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                access token used for identify user
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>protocol</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>string</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                http protocol used for api
+                
+            </td>
         </tr>
 
     
     </tbody>
 </table>
 
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-examples">
+<h5>Example</h5>
+
+    <pre class="prettyprint"><code>var Bangumi = require('bangumi');var bgm = new Bangumi({  access_token: "123456"});</code></pre>
+
+</div>
+
+</div>
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="auth"><span class="type-signature"></span>auth<span class="signature">(params, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+
+    
+
+
+
+<div class="description">
+    A POST method that login user with username and password, and returns auth string
+</div>
 
 
 
@@ -574,58 +425,6 @@
 
 
 
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Promise</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="createCollection"><span class="type-signature"></span>createCollection<span class="signature">(subject_id, params<span class="signature-attributes">opt</span>, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    A POST method that updates user's status on specific subject by subject id
-</div>
-
-
-
-
-
-
-
-
-
     <h5>Parameters:</h5>
     
 
@@ -653,13 +452,13 @@
 
         <tr>
             
-                <td class="name"><code>subject_id</code></td>
+                <td class="name"><code>params</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">number</span>
+<span class="param-type"><code>object</code></span>
 
 
             
@@ -677,20 +476,100 @@
 
             
 
-            <td class="description last">id of target subject</td>
+            <td class="description last">
+                
+                
+                    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>username</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>string</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                username or uid of target username
+                
+            </td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>params</code></td>
+                <td class="name"><code>password</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">object</span>
+<span class="param-type"><code>string</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                password for target user
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>function</code></span>
 
 
             
@@ -711,262 +590,67 @@
             
 
             <td class="description last">
-                <h6>Properties</h6>
+                callback function
                 
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
-        
-
-        
-        <th>Default</th>
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>status</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
             </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    wish
-                
-                </td>
-            
-
-            <td class="description last">accept [wish|collect|do|on_hold|dropped]</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>comment</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                </td>
-            
-
-            <td class="description last">comment on target subject status update</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>tags</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                </td>
-            
-
-            <td class="description last">tags on target subject status update, separated by comma</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>rating</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                </td>
-            
-
-            <td class="description last">star rating on target subject, accept [0~10]</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>privacy</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                </td>
-            
-
-            <td class="description last">privacy control of this action, accepts [0|1] (0.open, 1.private)</td>
         </tr>
 
     
     </tbody>
 </table>
 
-            </td>
-        </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-returns">
+<h5>Returns:</h5>
+
+        
+
+<dl class="param-type">
+    <dt>
+        Type:
+    </dt>
+    <dd>
+        
+<span class="param-type"><code>Promise</code></span>
+
+
+    </dd>
+</dl>
+
+
+    
+</div>
+
+
+
+</div>
+        
+            
+<div class="section-method">
 
     
 
-        <tr>
-            
-                <td class="name"><code>callback</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">callback function</td>
-        </tr>
+    <h4 class="name" id="createCollection"><span class="type-signature"></span>createCollection<span class="signature">(subject_id, params<span class="signature-attributes">opt</span>, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
 
     
-    </tbody>
-</table>
 
+
+
+<div class="description">
+    A POST method that updates user's status on specific subject by subject id
+</div>
 
 
 
@@ -1020,63 +704,6 @@
 
 
 
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Promise</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>bgm.createCollection(211567, {status: 'do', rating: 10});</code></pre>
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="fetchCalendar"><span class="type-signature"></span>fetchCalendar<span class="signature">(callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    A GET method that gets current weekly shows' seclude
-</div>
-
-
-
-
-
-
-
-
-
     <h5>Parameters:</h5>
     
 
@@ -1104,13 +731,47 @@
 
         <tr>
             
-                <td class="name"><code>callback</code></td>
+                <td class="name"><code>subject_id</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">function</span>
+<span class="param-type"><code>integer</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                id of target subject
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>object</code></span>
 
 
             
@@ -1130,13 +791,342 @@
 
             
 
-            <td class="description last">callback function</td>
+            <td class="description last">
+                
+                
+                    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>status</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>string</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    wish
+                
+                </td>
+            
+
+            <td class="description last">
+                accept [wish|collect|do|on_hold|dropped]
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>comment</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>string</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">
+                comment on target subject status update
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>tags</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>string</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">
+                tags on target subject status update, separated by comma
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>rating</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>integer</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">
+                star rating on target subject, accept [0~10]
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>privacy</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>integer</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">
+                privacy control of this action, accepts [0|1] (0.open, 1.private)
+                
+            </td>
         </tr>
 
     
     </tbody>
 </table>
 
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>function</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                callback function
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-returns">
+<h5>Returns:</h5>
+
+        
+
+<dl class="param-type">
+    <dt>
+        Type:
+    </dt>
+    <dd>
+        
+<span class="param-type"><code>Promise</code></span>
+
+
+    </dd>
+</dl>
+
+
+    
+</div>
+
+
+
+<div class="section-examples">
+<h5>Example</h5>
+
+    <pre class="prettyprint"><code>bgm.createCollection(211567, {status: 'do', rating: 10});</code></pre>
+
+</div>
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="fetchCalendar"><span class="type-signature"></span>fetchCalendar<span class="signature">(callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+
+    
+
+
+
+<div class="description">
+    A GET method that gets current weekly shows' seclude
+</div>
 
 
 
@@ -1190,58 +1180,6 @@
 
 
 
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Promise</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="fetchCollection"><span class="type-signature"></span>fetchCollection<span class="signature">(subject_id, params<span class="signature-attributes">opt</span>, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    A GET method that get current user's collection details on specific subject by subject id
-</div>
-
-
-
-
-
-
-
-
-
     <h5>Parameters:</h5>
     
 
@@ -1269,44 +1207,13 @@
 
         <tr>
             
-                <td class="name"><code>subject_id</code></td>
+                <td class="name"><code>callback</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">id of target subject</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>params</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
+<span class="param-type"><code>function</code></span>
 
 
             
@@ -1327,106 +1234,67 @@
             
 
             <td class="description last">
-                <h6>Properties</h6>
+                callback function
                 
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>auth</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
             </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">authentication string used for validation of user identity, deprecated</td>
         </tr>
 
     
     </tbody>
 </table>
 
-            </td>
-        </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-returns">
+<h5>Returns:</h5>
+
+        
+
+<dl class="param-type">
+    <dt>
+        Type:
+    </dt>
+    <dd>
+        
+<span class="param-type"><code>Promise</code></span>
+
+
+    </dd>
+</dl>
+
+
+    
+</div>
+
+
+
+</div>
+        
+            
+<div class="section-method">
 
     
 
-        <tr>
-            
-                <td class="name"><code>callback</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">callback function</td>
-        </tr>
+    <h4 class="name" id="fetchCollection"><span class="type-signature"></span>fetchCollection<span class="signature">(subject_id, params<span class="signature-attributes">opt</span>, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
 
     
-    </tbody>
-</table>
 
+
+
+<div class="description">
+    A GET method that get current user's collection details on specific subject by subject id
+</div>
 
 
 
@@ -1480,63 +1348,6 @@
 
 
 
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Promise</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>bgm.fetchCollection(1);</code></pre>
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="fetchEps"><span class="type-signature"></span>fetchEps<span class="signature">(subject_id, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    A GET method that gets a list of episodes of a subject by subject id
-</div>
-
-
-
-
-
-
-
-
-
     <h5>Parameters:</h5>
     
 
@@ -1570,7 +1381,7 @@
             <td class="type">
             
                 
-<span class="param-type">number</span>
+<span class="param-type"><code>integer</code></span>
 
 
             
@@ -1588,20 +1399,23 @@
 
             
 
-            <td class="description last">id of target subject</td>
+            <td class="description last">
+                id of target subject
+                
+            </td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>callback</code></td>
+                <td class="name"><code>params</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">function</span>
+<span class="param-type"><code>object</code></span>
 
 
             
@@ -1621,13 +1435,174 @@
 
             
 
-            <td class="description last">callback function</td>
+            <td class="description last">
+                
+                
+                    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>auth</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>string</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                authentication string used for validation of user identity, deprecated
+                
+            </td>
         </tr>
 
     
     </tbody>
 </table>
 
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>function</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                callback function
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-returns">
+<h5>Returns:</h5>
+
+        
+
+<dl class="param-type">
+    <dt>
+        Type:
+    </dt>
+    <dd>
+        
+<span class="param-type"><code>Promise</code></span>
+
+
+    </dd>
+</dl>
+
+
+    
+</div>
+
+
+
+<div class="section-examples">
+<h5>Example</h5>
+
+    <pre class="prettyprint"><code>bgm.fetchCollection(1);</code></pre>
+
+</div>
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="fetchEps"><span class="type-signature"></span>fetchEps<span class="signature">(subject_id, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+
+    
+
+
+
+<div class="description">
+    A GET method that gets a list of episodes of a subject by subject id
+</div>
 
 
 
@@ -1683,148 +1658,8 @@
 
 
 
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Promise</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="fetchProgress"><span class="type-signature"></span>fetchProgress<span class="signature">(username, params<span class="signature-attributes">opt</span>, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    A GET method that get lists of episodes that user already watched, sorted by subject id
-</div>
-
-
-
-
-
-
-
-
-
     <h5>Parameters:</h5>
     
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>username</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-|
-
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">username or uid of target username</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>params</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">
-                <h6>Properties</h6>
-                
 
 <table class="params">
     <thead>
@@ -1856,7 +1691,7 @@
             <td class="type">
             
                 
-<span class="param-type">number</span>
+<span class="param-type"><code>integer</code></span>
 
 
             
@@ -1864,8 +1699,6 @@
 
             
                 <td class="attributes">
-                
-                    &lt;optional><br>
                 
 
                 
@@ -1876,46 +1709,9 @@
 
             
 
-            <td class="description last">the id of the subject user wants fetch progress</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>auth</code></td>
-            
-
-            <td class="type">
-            
+            <td class="description last">
+                id of target subject
                 
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">authentication string used for validation of user identity, deprecated</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
             </td>
         </tr>
 
@@ -1929,7 +1725,7 @@
             <td class="type">
             
                 
-<span class="param-type">function</span>
+<span class="param-type"><code>function</code></span>
 
 
             
@@ -1949,13 +1745,68 @@
 
             
 
-            <td class="description last">callback function</td>
+            <td class="description last">
+                callback function
+                
+            </td>
         </tr>
 
     
     </tbody>
 </table>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-returns">
+<h5>Returns:</h5>
+
+        
+
+<dl class="param-type">
+    <dt>
+        Type:
+    </dt>
+    <dd>
+        
+<span class="param-type"><code>Promise</code></span>
+
+
+    </dd>
+</dl>
+
+
+    
+</div>
+
+
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="fetchProgress"><span class="type-signature"></span>fetchProgress<span class="signature">(username, params<span class="signature-attributes">opt</span>, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+
+    
+
+
+
+<div class="description">
+    A GET method that get lists of episodes that user already watched, sorted by subject id
+</div>
 
 
 
@@ -2009,65 +1860,100 @@
 
 
 
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Promise</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>bgm.fetchProgress(1, {subject_id:899}).then(console.log);</code></pre>
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="fetchSubject"><span class="type-signature"></span>fetchSubject<span class="signature">(subject_id, params<span class="signature-attributes">opt</span>, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    A GET method that gets a details of a subject by id
-</div>
-
-
-
-
-
-
-
-
-
     <h5>Parameters:</h5>
     
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>username</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>string</code></span>
+|
+
+<span class="param-type"><code>number</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                username or uid of target username
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>object</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                
+                
+                    
 
 <table class="params">
     <thead>
@@ -2099,38 +1985,7 @@
             <td class="type">
             
                 
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">id of target subject</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>params</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
+<span class="param-type"><code>integer</code></span>
 
 
             
@@ -2151,40 +2006,22 @@
             
 
             <td class="description last">
-                <h6>Properties</h6>
+                the id of the subject user wants fetch progress
                 
+            </td>
+        </tr>
 
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
     
 
         <tr>
             
-                <td class="name"><code>responseGroup</code></td>
+                <td class="name"><code>auth</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">string</span>
+<span class="param-type"><code>string</code></span>
 
 
             
@@ -2204,13 +2041,17 @@
 
             
 
-            <td class="description last">accept [small|medium|large]</td>
+            <td class="description last">
+                authentication string used for validation of user identity, deprecated
+                
+            </td>
         </tr>
 
     
     </tbody>
 </table>
 
+                
             </td>
         </tr>
 
@@ -2224,7 +2065,7 @@
             <td class="type">
             
                 
-<span class="param-type">function</span>
+<span class="param-type"><code>function</code></span>
 
 
             
@@ -2244,13 +2085,75 @@
 
             
 
-            <td class="description last">callback function</td>
+            <td class="description last">
+                callback function
+                
+            </td>
         </tr>
 
     
     </tbody>
 </table>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-returns">
+<h5>Returns:</h5>
+
+        
+
+<dl class="param-type">
+    <dt>
+        Type:
+    </dt>
+    <dd>
+        
+<span class="param-type"><code>Promise</code></span>
+
+
+    </dd>
+</dl>
+
+
+    
+</div>
+
+
+
+<div class="section-examples">
+<h5>Example</h5>
+
+    <pre class="prettyprint"><code>bgm.fetchProgress(1, {subject_id:899}).then(console.log);</code></pre>
+
+</div>
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="fetchSubject"><span class="type-signature"></span>fetchSubject<span class="signature">(subject_id, params<span class="signature-attributes">opt</span>, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+
+    
+
+
+
+<div class="description">
+    A GET method that gets a details of a subject by id
+</div>
 
 
 
@@ -2304,58 +2207,6 @@
 
 
 
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Promise</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="fetchSubjectEps"><span class="type-signature"></span>fetchSubjectEps<span class="signature">(subject_id, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    A GET method that gets a list of episodes of a subject by subject id
-</div>
-
-
-
-
-
-
-
-
-
     <h5>Parameters:</h5>
     
 
@@ -2389,7 +2240,7 @@
             <td class="type">
             
                 
-<span class="param-type">number</span>
+<span class="param-type"><code>integer</code></span>
 
 
             
@@ -2407,20 +2258,23 @@
 
             
 
-            <td class="description last">id of target subject</td>
+            <td class="description last">
+                id of target subject
+                
+            </td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>callback</code></td>
+                <td class="name"><code>params</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">function</span>
+<span class="param-type"><code>object</code></span>
 
 
             
@@ -2440,13 +2294,167 @@
 
             
 
-            <td class="description last">callback function</td>
+            <td class="description last">
+                
+                
+                    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>responseGroup</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>string</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                accept [small|medium|large]
+                
+            </td>
         </tr>
 
     
     </tbody>
 </table>
 
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>function</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                callback function
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-returns">
+<h5>Returns:</h5>
+
+        
+
+<dl class="param-type">
+    <dt>
+        Type:
+    </dt>
+    <dd>
+        
+<span class="param-type"><code>Promise</code></span>
+
+
+    </dd>
+</dl>
+
+
+    
+</div>
+
+
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="fetchSubjectEps"><span class="type-signature"></span>fetchSubjectEps<span class="signature">(subject_id, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+
+    
+
+
+
+<div class="description">
+    A GET method that gets a list of episodes of a subject by subject id
+</div>
 
 
 
@@ -2500,63 +2508,6 @@
 
 
 
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Promise</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>bgm.fetchSubjectEps(211567);</code></pre>
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="fetchUser"><span class="type-signature"></span>fetchUser<span class="signature">(username, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    A GET method that gets target user's profile
-</div>
-
-
-
-
-
-
-
-
-
     <h5>Parameters:</h5>
     
 
@@ -2584,16 +2535,13 @@
 
         <tr>
             
-                <td class="name"><code>username</code></td>
+                <td class="name"><code>subject_id</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">string</span>
-|
-
-<span class="param-type">number</span>
+<span class="param-type"><code>integer</code></span>
 
 
             
@@ -2611,7 +2559,10 @@
 
             
 
-            <td class="description last">username or uid of target username</td>
+            <td class="description last">
+                id of target subject
+                
+            </td>
         </tr>
 
     
@@ -2624,7 +2575,7 @@
             <td class="type">
             
                 
-<span class="param-type">function</span>
+<span class="param-type"><code>function</code></span>
 
 
             
@@ -2644,13 +2595,75 @@
 
             
 
-            <td class="description last">callback function</td>
+            <td class="description last">
+                callback function
+                
+            </td>
         </tr>
 
     
     </tbody>
 </table>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-returns">
+<h5>Returns:</h5>
+
+        
+
+<dl class="param-type">
+    <dt>
+        Type:
+    </dt>
+    <dd>
+        
+<span class="param-type"><code>Promise</code></span>
+
+
+    </dd>
+</dl>
+
+
+    
+</div>
+
+
+
+<div class="section-examples">
+<h5>Example</h5>
+
+    <pre class="prettyprint"><code>bgm.fetchSubjectEps(211567);</code></pre>
+
+</div>
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="fetchUser"><span class="type-signature"></span>fetchUser<span class="signature">(username, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+
+    
+
+
+
+<div class="description">
+    A GET method that gets target user's profile
+</div>
 
 
 
@@ -2704,58 +2717,6 @@
 
 
 
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Promise</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="fetchUserCollection"><span class="type-signature"></span>fetchUserCollection<span class="signature">(username, params, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    A GET method that gets details of user's collection by user id
-</div>
-
-
-
-
-
-
-
-
-
     <h5>Parameters:</h5>
     
 
@@ -2789,38 +2750,10 @@
             <td class="type">
             
                 
-<span class="param-type">string</span>
+<span class="param-type"><code>string</code></span>
+|
 
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">username or uid of target username</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>params</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
+<span class="param-type"><code>number</code></span>
 
 
             
@@ -2839,130 +2772,8 @@
             
 
             <td class="description last">
-                <h6>Properties</h6>
+                username or uid of target username
                 
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>cat</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">type of the collections, accepts [watching|all_watching]</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>responseGroup</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">type of the collections, accepts [medium|small]</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>ids</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">ids of subjects users wants to fetch, this is very poorly implemented at the moment</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
             </td>
         </tr>
 
@@ -2976,7 +2787,7 @@
             <td class="type">
             
                 
-<span class="param-type">function</span>
+<span class="param-type"><code>function</code></span>
 
 
             
@@ -2996,13 +2807,68 @@
 
             
 
-            <td class="description last">callback function</td>
+            <td class="description last">
+                callback function
+                
+            </td>
         </tr>
 
     
     </tbody>
 </table>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-returns">
+<h5>Returns:</h5>
+
+        
+
+<dl class="param-type">
+    <dt>
+        Type:
+    </dt>
+    <dd>
+        
+<span class="param-type"><code>Promise</code></span>
+
+
+    </dd>
+</dl>
+
+
+    
+</div>
+
+
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="fetchUserCollection"><span class="type-signature"></span>fetchUserCollection<span class="signature">(username, params, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+
+    
+
+
+
+<div class="description">
+    A GET method that gets details of user's collection by user id
+</div>
 
 
 
@@ -3056,63 +2922,6 @@
 
 
 
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Promise</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>bgm.fetchUserCollection(1, {cat:'all_watching', responseGroup: 'small'}).then(console.log)</code></pre>
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="fetchUserCollections"><span class="type-signature"></span>fetchUserCollections<span class="signature">(username, subject_type, params<span class="signature-attributes">opt</span>, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    A GET method that gets overview of user's collection by username and subject type
-</div>
-
-
-
-
-
-
-
-
-
     <h5>Parameters:</h5>
     
 
@@ -3146,7 +2955,7 @@
             <td class="type">
             
                 
-<span class="param-type">string</span>
+<span class="param-type"><code>string</code></span>
 
 
             
@@ -3164,38 +2973,10 @@
 
             
 
-            <td class="description last">username or uid of target username</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>subject_type</code></td>
-            
-
-            <td class="type">
-            
+            <td class="description last">
+                username or uid of target username
                 
-<span class="param-type">string</span>
-
-
-            
             </td>
-
-            
-                <td class="attributes">
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">type of subject</td>
         </tr>
 
     
@@ -3208,7 +2989,7 @@
             <td class="type">
             
                 
-<span class="param-type">object</span>
+<span class="param-type"><code>object</code></span>
 
 
             
@@ -3216,8 +2997,6 @@
 
             
                 <td class="attributes">
-                
-                    &lt;optional><br>
                 
 
                 
@@ -3229,8 +3008,9 @@
             
 
             <td class="description last">
-                <h6>Properties</h6>
                 
+                
+                    
 
 <table class="params">
     <thead>
@@ -3256,13 +3036,47 @@
 
         <tr>
             
-                <td class="name"><code>max_results</code></td>
+                <td class="name"><code>cat</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">number</span>
+<span class="param-type"><code>string</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                type of the collections, accepts [watching|all_watching]
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>responseGroup</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>string</code></span>
 
 
             
@@ -3282,13 +3096,53 @@
 
             
 
-            <td class="description last">upper limit of amount of subjects client can fetch (max 25)</td>
+            <td class="description last">
+                type of the collections, accepts [medium|small]
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>ids</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>string</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                ids of subjects users wants to fetch, this is very poorly implemented at the moment
+                
+            </td>
         </tr>
 
     
     </tbody>
 </table>
 
+                
             </td>
         </tr>
 
@@ -3302,7 +3156,7 @@
             <td class="type">
             
                 
-<span class="param-type">function</span>
+<span class="param-type"><code>function</code></span>
 
 
             
@@ -3322,13 +3176,75 @@
 
             
 
-            <td class="description last">callback function</td>
+            <td class="description last">
+                callback function
+                
+            </td>
         </tr>
 
     
     </tbody>
 </table>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-returns">
+<h5>Returns:</h5>
+
+        
+
+<dl class="param-type">
+    <dt>
+        Type:
+    </dt>
+    <dd>
+        
+<span class="param-type"><code>Promise</code></span>
+
+
+    </dd>
+</dl>
+
+
+    
+</div>
+
+
+
+<div class="section-examples">
+<h5>Example</h5>
+
+    <pre class="prettyprint"><code>bgm.fetchUserCollection(1, {cat:'all_watching', responseGroup: 'small'}).then(console.log)</code></pre>
+
+</div>
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="fetchUserCollections"><span class="type-signature"></span>fetchUserCollections<span class="signature">(username, subject_type, params<span class="signature-attributes">opt</span>, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+
+    
+
+
+
+<div class="description">
+    A GET method that gets overview of user's collection by username and subject type
+</div>
 
 
 
@@ -3382,63 +3298,6 @@
 
 
 
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Promise</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>bgm.fetchUserCollections('sai', 'real', {max_results: 1}).then(console.log).catch(console.error)</code></pre>
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="fetchUserCollectionsStatus"><span class="type-signature"></span>fetchUserCollectionsStatus<span class="signature">(username, params<span class="signature-attributes">opt</span>, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    A GET method that gets overview of user's collection statics by username
-</div>
-
-
-
-
-
-
-
-
-
     <h5>Parameters:</h5>
     
 
@@ -3472,7 +3331,7 @@
             <td class="type">
             
                 
-<span class="param-type">string</span>
+<span class="param-type"><code>string</code></span>
 
 
             
@@ -3490,7 +3349,44 @@
 
             
 
-            <td class="description last">username or uid of target username</td>
+            <td class="description last">
+                username or uid of target username
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>subject_type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>string</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                type of subject
+                
+            </td>
         </tr>
 
     
@@ -3503,7 +3399,7 @@
             <td class="type">
             
                 
-<span class="param-type">object</span>
+<span class="param-type"><code>object</code></span>
 
 
             
@@ -3523,7 +3419,73 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last">
+                
+                
+                    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>max_results</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>integer</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                upper limit of amount of subjects client can fetch (max 25)
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+                
+            </td>
         </tr>
 
     
@@ -3536,7 +3498,7 @@
             <td class="type">
             
                 
-<span class="param-type">function</span>
+<span class="param-type"><code>function</code></span>
 
 
             
@@ -3556,13 +3518,75 @@
 
             
 
-            <td class="description last">callback function</td>
+            <td class="description last">
+                callback function
+                
+            </td>
         </tr>
 
     
     </tbody>
 </table>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-returns">
+<h5>Returns:</h5>
+
+        
+
+<dl class="param-type">
+    <dt>
+        Type:
+    </dt>
+    <dd>
+        
+<span class="param-type"><code>Promise</code></span>
+
+
+    </dd>
+</dl>
+
+
+    
+</div>
+
+
+
+<div class="section-examples">
+<h5>Example</h5>
+
+    <pre class="prettyprint"><code>bgm.fetchUserCollections('sai', 'real', {max_results: 1}).then(console.log).catch(console.error)</code></pre>
+
+</div>
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="fetchUserCollectionsStatus"><span class="type-signature"></span>fetchUserCollectionsStatus<span class="signature">(username, params<span class="signature-attributes">opt</span>, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+
+    
+
+
+
+<div class="description">
+    A GET method that gets overview of user's collection statics by username
+</div>
 
 
 
@@ -3616,63 +3640,6 @@
 
 
 
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Promise</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>bgm.fetchUserCollectionsStatus('sai').then(console.log).catch(console.error)</code></pre>
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="get"><span class="type-signature"></span>get<span class="signature">(url, params, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    A general GET request method for Bangumi API
-</div>
-
-
-
-
-
-
-
-
-
     <h5>Parameters:</h5>
     
 
@@ -3700,13 +3667,13 @@
 
         <tr>
             
-                <td class="name"><code>url</code></td>
+                <td class="name"><code>username</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">string</span>
+<span class="param-type"><code>string</code></span>
 
 
             
@@ -3724,7 +3691,10 @@
 
             
 
-            <td class="description last">base GET request path</td>
+            <td class="description last">
+                username or uid of target username
+                
+            </td>
         </tr>
 
     
@@ -3737,38 +3707,7 @@
             <td class="type">
             
                 
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">parameters used for GET query string</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>callback</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
+<span class="param-type"><code>object</code></span>
 
 
             
@@ -3788,13 +3727,111 @@
 
             
 
-            <td class="description last">callback function</td>
+            <td class="description last">
+                
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>function</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                callback function
+                
+            </td>
         </tr>
 
     
     </tbody>
 </table>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-returns">
+<h5>Returns:</h5>
+
+        
+
+<dl class="param-type">
+    <dt>
+        Type:
+    </dt>
+    <dd>
+        
+<span class="param-type"><code>Promise</code></span>
+
+
+    </dd>
+</dl>
+
+
+    
+</div>
+
+
+
+<div class="section-examples">
+<h5>Example</h5>
+
+    <pre class="prettyprint"><code>bgm.fetchUserCollectionsStatus('sai').then(console.log).catch(console.error)</code></pre>
+
+</div>
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="get"><span class="type-signature"></span>get<span class="signature">(url, params, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    A general GET request method for Bangumi API
+</div>
 
 
 
@@ -3848,40 +3885,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="post"><span class="type-signature"></span>post<span class="signature">(url, params, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    A general POST reqeust method for Bangumi API
-</div>
-
-
-
-
-
-
-
-
-
     <h5>Parameters:</h5>
     
 
@@ -3915,7 +3918,7 @@
             <td class="type">
             
                 
-<span class="param-type">string</span>
+<span class="param-type"><code>string</code></span>
 
 
             
@@ -3933,7 +3936,10 @@
 
             
 
-            <td class="description last">base POST request path</td>
+            <td class="description last">
+                base GET request path
+                
+            </td>
         </tr>
 
     
@@ -3946,7 +3952,7 @@
             <td class="type">
             
                 
-<span class="param-type">object</span>
+<span class="param-type"><code>object</code></span>
 
 
             
@@ -3964,7 +3970,10 @@
 
             
 
-            <td class="description last">parameters used for POST body</td>
+            <td class="description last">
+                parameters used for GET query string
+                
+            </td>
         </tr>
 
     
@@ -3977,7 +3986,7 @@
             <td class="type">
             
                 
-<span class="param-type">function</span>
+<span class="param-type"><code>function</code></span>
 
 
             
@@ -3997,13 +4006,47 @@
 
             
 
-            <td class="description last">callback function</td>
+            <td class="description last">
+                callback function
+                
+            </td>
         </tr>
 
     
     </tbody>
 </table>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="post"><span class="type-signature"></span>post<span class="signature">(url, params, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+
+    
+
+
+
+<div class="description">
+    A general POST reqeust method for Bangumi API
+</div>
 
 
 
@@ -4057,58 +4100,6 @@
 
 
 
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Promise</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="search"><span class="type-signature"></span>search<span class="signature">(keywords, params<span class="signature-attributes">opt</span>, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    A GET method that searches and returns a list of subjects by keywords
-</div>
-
-
-
-
-
-
-
-
-
     <h5>Parameters:</h5>
     
 
@@ -4136,13 +4127,13 @@
 
         <tr>
             
-                <td class="name"><code>keywords</code></td>
+                <td class="name"><code>url</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">string</span>
+<span class="param-type"><code>string</code></span>
 
 
             
@@ -4160,7 +4151,10 @@
 
             
 
-            <td class="description last">query string for search</td>
+            <td class="description last">
+                base POST request path
+                
+            </td>
         </tr>
 
     
@@ -4173,7 +4167,41 @@
             <td class="type">
             
                 
-<span class="param-type">object</span>
+<span class="param-type"><code>object</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                parameters used for POST body
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>function</code></span>
 
 
             
@@ -4194,205 +4222,67 @@
             
 
             <td class="description last">
-                <h6>Properties</h6>
+                callback function
                 
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>responseGroup</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
             </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">accept [small|medium|large]</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>type</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">accept [1|2|3|4|6] (1.book 2.anime 3.music 4.game 5.live action)</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>start</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">result start index, used for paging</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>max_results</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">the number of entries returns, max 25</td>
         </tr>
 
     
     </tbody>
 </table>
 
-            </td>
-        </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-returns">
+<h5>Returns:</h5>
+
+        
+
+<dl class="param-type">
+    <dt>
+        Type:
+    </dt>
+    <dd>
+        
+<span class="param-type"><code>Promise</code></span>
+
+
+    </dd>
+</dl>
+
+
+    
+</div>
+
+
+
+</div>
+        
+            
+<div class="section-method">
 
     
 
-        <tr>
-            
-                <td class="name"><code>callback</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">callback function</td>
-        </tr>
+    <h4 class="name" id="search"><span class="type-signature"></span>search<span class="signature">(keywords, params<span class="signature-attributes">opt</span>, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
 
     
-    </tbody>
-</table>
 
+
+
+<div class="description">
+    A GET method that searches and returns a list of subjects by keywords
+</div>
 
 
 
@@ -4446,63 +4336,6 @@
 
 
 
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Promise</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>bgm.search('天元突破');</code></pre>
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="setAccessToken"><span class="type-signature"></span>setAccessToken<span class="signature">(access_token)</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Update access toke in case it's refreshed
-</div>
-
-
-
-
-
-
-
-
-
     <h5>Parameters:</h5>
     
 
@@ -4516,6 +4349,8 @@
         <th>Type</th>
 
         
+        <th>Attributes</th>
+        
 
         
 
@@ -4528,29 +4363,342 @@
 
         <tr>
             
-                <td class="name"><code>access_token</code></td>
+                <td class="name"><code>keywords</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">string</span>
+<span class="param-type"><code>string</code></span>
 
 
             
             </td>
 
             
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
 
             
 
-            <td class="description last">the new access token</td>
+            <td class="description last">
+                query string for search
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>object</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                
+                
+                    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>responseGroup</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>string</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                accept [small|medium|large]
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>integer</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                accept [1|2|3|4|6] (1.book 2.anime 3.music 4.game 5.live action)
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>start</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>integer</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                result start index, used for paging
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>max_results</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>integer</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                the number of entries returns, max 25
+                
+            </td>
         </tr>
 
     
     </tbody>
 </table>
 
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>function</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                callback function
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-returns">
+<h5>Returns:</h5>
+
+        
+
+<dl class="param-type">
+    <dt>
+        Type:
+    </dt>
+    <dd>
+        
+<span class="param-type"><code>Promise</code></span>
+
+
+    </dd>
+</dl>
+
+
+    
+</div>
+
+
+
+<div class="section-examples">
+<h5>Example</h5>
+
+    <pre class="prettyprint"><code>bgm.search('天元突破');</code></pre>
+
+</div>
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="setAccessToken"><span class="type-signature"></span>setAccessToken<span class="signature">(access_token)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Update access toke in case it's refreshed
+</div>
 
 
 
@@ -4604,45 +4752,6 @@
 
 
 
-
-
-
-
-
-
-
-
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>bgm.setAccessToken('123456');</code></pre>
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="setPromiseProvider"><span class="type-signature"></span>setPromiseProvider<span class="signature">(provider)</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Set custom promise provider, default using nodejs ES6 promise provider
-</div>
-
-
-
-
-
-
-
-
-
     <h5>Parameters:</h5>
     
 
@@ -4668,13 +4777,13 @@
 
         <tr>
             
-                <td class="name"><code>provider</code></td>
+                <td class="name"><code>access_token</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">function</span>
+<span class="param-type"><code>string</code></span>
 
 
             
@@ -4684,13 +4793,54 @@
 
             
 
-            <td class="description last">Custom promise provider</td>
+            <td class="description last">
+                the new access token
+                
+            </td>
         </tr>
 
     
     </tbody>
 </table>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-examples">
+<h5>Example</h5>
+
+    <pre class="prettyprint"><code>bgm.setAccessToken('123456');</code></pre>
+
+</div>
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="setPromiseProvider"><span class="type-signature"></span>setPromiseProvider<span class="signature">(provider)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Set custom promise provider, default using nodejs ES6 promise provider
+</div>
 
 
 
@@ -4744,45 +4894,6 @@
 
 
 
-
-
-
-
-
-
-
-
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>//use bluebird as provider, so you can use things like .finally()bgm.setPromiseProvider(require('bluebird'));</code></pre>
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="updateEpStatus"><span class="type-signature"></span>updateEpStatus<span class="signature">(ep_id, status, params<span class="signature-attributes">opt</span>, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    A POST method that updates user's status on specific episode by episode id
-</div>
-
-
-
-
-
-
-
-
-
     <h5>Parameters:</h5>
     
 
@@ -4796,8 +4907,6 @@
         <th>Type</th>
 
         
-        <th>Attributes</th>
-        
 
         
 
@@ -4810,195 +4919,70 @@
 
         <tr>
             
-                <td class="name"><code>ep_id</code></td>
+                <td class="name"><code>provider</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">number</span>
+<span class="param-type"><code>function</code></span>
 
 
             
             </td>
 
-            
-                <td class="attributes">
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">id of target episode</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>status</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">accept [watched|queue|drop|remove]</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>params</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
             
 
             
 
             <td class="description last">
-                <h6>Properties</h6>
+                Custom promise provider
                 
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>ep_id</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
             </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">a list of episode ids for batch processing, separated by comma</td>
         </tr>
 
     
     </tbody>
 </table>
 
-            </td>
-        </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-examples">
+<h5>Example</h5>
+
+    <pre class="prettyprint"><code>//use bluebird as provider, so you can use things like .finally()bgm.setPromiseProvider(require('bluebird'));</code></pre>
+
+</div>
+
+</div>
+        
+            
+<div class="section-method">
 
     
 
-        <tr>
-            
-                <td class="name"><code>callback</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">callback function</td>
-        </tr>
+    <h4 class="name" id="updateEpStatus"><span class="type-signature"></span>updateEpStatus<span class="signature">(ep_id, status, params<span class="signature-attributes">opt</span>, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
 
     
-    </tbody>
-</table>
 
+
+
+<div class="description">
+    A POST method that updates user's status on specific episode by episode id
+</div>
 
 
 
@@ -5052,63 +5036,6 @@
 
 
 
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Promise</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>bgm.updateEpStatus(7036,'drop');</code></pre>
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="updateWatchedEps"><span class="type-signature"></span>updateWatchedEps<span class="signature">(subject_id, params, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    A POST method that marks episode 1 to target number as watched
-</div>
-
-
-
-
-
-
-
-
-
     <h5>Parameters:</h5>
     
 
@@ -5136,44 +5063,13 @@
 
         <tr>
             
-                <td class="name"><code>subject_id</code></td>
+                <td class="name"><code>ep_id</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">id of target subject</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>params</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
+<span class="param-type"><code>integer</code></span>
 
 
             
@@ -5192,8 +5088,79 @@
             
 
             <td class="description last">
-                <h6>Properties</h6>
+                id of target episode
                 
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>status</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>string</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                accept [watched|queue|drop|remove]
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>object</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                
+                
+                    
 
 <table class="params">
     <thead>
@@ -5219,44 +5186,13 @@
 
         <tr>
             
-                <td class="name"><code>watched_eps</code></td>
+                <td class="name"><code>ep_id</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">the number of episodes that user currently have watched</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>watched_vols</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
+<span class="param-type"><code>string</code></span>
 
 
             
@@ -5276,13 +5212,17 @@
 
             
 
-            <td class="description last">the number of episodes that user currently have watched</td>
+            <td class="description last">
+                a list of episode ids for batch processing, separated by comma
+                
+            </td>
         </tr>
 
     
     </tbody>
 </table>
 
+                
             </td>
         </tr>
 
@@ -5296,7 +5236,7 @@
             <td class="type">
             
                 
-<span class="param-type">function</span>
+<span class="param-type"><code>function</code></span>
 
 
             
@@ -5316,13 +5256,75 @@
 
             
 
-            <td class="description last">callback function</td>
+            <td class="description last">
+                callback function
+                
+            </td>
         </tr>
 
     
     </tbody>
 </table>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-returns">
+<h5>Returns:</h5>
+
+        
+
+<dl class="param-type">
+    <dt>
+        Type:
+    </dt>
+    <dd>
+        
+<span class="param-type"><code>Promise</code></span>
+
+
+    </dd>
+</dl>
+
+
+    
+</div>
+
+
+
+<div class="section-examples">
+<h5>Example</h5>
+
+    <pre class="prettyprint"><code>bgm.updateEpStatus(7036,'drop');</code></pre>
+
+</div>
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="updateWatchedEps"><span class="type-signature"></span>updateWatchedEps<span class="signature">(subject_id, params, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+
+    
+
+
+
+<div class="description">
+    A POST method that marks episode 1 to target number as watched
+</div>
 
 
 
@@ -5376,38 +5378,278 @@
 
 
 
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>subject_id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>integer</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                id of target subject
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>object</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                
+                
+                    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>watched_eps</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>string</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                the number of episodes that user currently have watched
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>watched_vols</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>string</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                the number of episodes that user currently have watched
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>function</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                callback function
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+<div class="section-returns">
 <h5>Returns:</h5>
 
         
 
-
-<dl>
+<dl class="param-type">
     <dt>
-        Type
+        Type:
     </dt>
     <dd>
         
-<span class="param-type">Promise</span>
+<span class="param-type"><code>Promise</code></span>
 
 
     </dd>
 </dl>
 
+
     
+</div>
 
 
 
+<div class="section-examples">
+<h5>Example</h5>
 
-    <h5>Example</h5>
-    
     <pre class="prettyprint"><code>bgm.updateWatchedEps(18462, {watched_eps: 10, watched_vols: 2});</code></pre>
 
+</div>
 
-
+</div>
         
     
 
@@ -5423,17 +5665,13 @@
 
 </div>
 
-<nav>
-    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-bangumi.html">bangumi</a></li></ul><h3>Classes</h3><ul><li><a href="module-bangumi-Bangumi.html">Bangumi</a></li></ul>
-</nav>
-
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Fri May 11 2018 09:01:29 GMT-0700 (Pacific Daylight Time)
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Fri May 11 2018 10:08:54 GMT-0700 (Pacific Daylight Time) using the Minami theme.
 </footer>
 
-<script> prettyPrint(); </script>
-<script src="scripts/linenumber.js"> </script>
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
 </body>
 </html>
