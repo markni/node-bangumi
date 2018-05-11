@@ -141,7 +141,7 @@ Bangumi.prototype._get = function(url, params, callback) {
  * A general GET request method for Bangumi API
  * @param url {string} base GET request path
  * @param params {object} parameters used for GET query string
- * @param callback {function} callback function
+ * @param [callback] {function} callback function
  */
 Bangumi.prototype.get = function(url, params, callback) {
   var self = this;
@@ -209,7 +209,7 @@ Bangumi.prototype._post = function(url, params, callback) {
  * A general POST reqeust method for Bangumi API
  * @param url {string} base POST request path
  * @param params {object} parameters used for POST body
- * @param callback {function} callback function
+ * @param [callback] {function} callback function
  * @returns {Promise}
  */
 
@@ -223,7 +223,7 @@ Bangumi.prototype.post = function(url, params, callback) {
 
 /**
  * A GET method that gets current weekly shows' seclude
- * @param callback {function} callback function
+ * @param [callback] {function} callback function
  * @returns {Promise}
  */
 Bangumi.prototype.fetchCalendar = function(callback) {
@@ -234,7 +234,7 @@ Bangumi.prototype.fetchCalendar = function(callback) {
 /**
  * A GET method that gets target user's profile
  * @param username {string|number} username or uid of target username
- * @param callback {function} callback function
+ * @param [callback] {function} callback function
  * @returns {Promise}
  */
 Bangumi.prototype.fetchUser = function(username, callback){
@@ -247,7 +247,7 @@ Bangumi.prototype.fetchUser = function(username, callback){
  * @param subject_id {number} id of target subject
  * @param params {object}
  * @param [params.responseGroup] {string} accept [small|medium|large]
- * @param callback {function} callback function
+ * @param [callback] {function} callback function
  * @returns {Promise}
  */
 Bangumi.prototype.fetchSubject = function(subject_id, params, callback){
@@ -258,7 +258,7 @@ Bangumi.prototype.fetchSubject = function(subject_id, params, callback){
 /**
  * A GET method that gets a list of episodes of a subject by subject id
  * @param subject_id {number} id of target subject
- * @param callback {function} callback function
+ * @param [callback] {function} callback function
  * @returns {Promise}
  */
 
@@ -272,7 +272,7 @@ Bangumi.prototype.fetchEps = function(subject_id, callback){
  * @param username {string} username or uid of target username
  * @param params {object}
  * @param [params.cat] {string} accept [watching]
- * @param callback {function} callback function
+ * @param [callback] {function} callback function
  * @returns {Promise}
  */
 Bangumi.prototype.fetchUserCollection = function(username, params, callback){
@@ -286,17 +286,39 @@ Bangumi.prototype.fetchUserCollection = function(username, params, callback){
  * @param subject_type {string} type of subject
  * @param params {object}
  * @param [params.max_results] {number} upper limit of amount of subjects client can fetch (max 25)
- * @param callback {function} callback function
+ * @param [callback] {function} callback function
  * @returns {Promise}
  * @example
  * bgm.fetchUserCollections('sai', 'real', {max_results: 1}).then(console.log).catch(console.error)
  */
 Bangumi.prototype.fetchUserCollections = function(username, subject_type, params, callback){
   //note here using our appid due to a api bug: https://github.com/bangumi/api/issues/24
-  params.app_id = nodeBangumiAppId;
+  if(typeof params === 'object' &amp;&amp; !params.hasOwnProperty('app_id')) params.app_id = nodeBangumiAppId;
+  if(typeof params === 'undefined') params = {app_id : nodeBangumiAppId};
+
   var url = '/user/' + username + '/collections' + (subject_type ? '/' : '') + subject_type;
   return this.get(url, params, callback);
 };
+
+
+/**
+ * A GET method that gets overview of user's collection statics by username
+ * @param username {string} username or uid of target username
+ * @param [params] {object}
+ * @param [callback] {function} callback function
+ * @returns {Promise}
+ * @example
+ * bgm.fetchUserCollectionsStatus('sai').then(console.log).catch(console.error)
+ */
+Bangumi.prototype.fetchUserCollectionsStatus = function(username, params, callback){
+  //note here using our appid due to a api bug: https://github.com/bangumi/api/issues/24
+  if(typeof params === 'object' &amp;&amp; !params.hasOwnProperty('app_id')) params.app_id = nodeBangumiAppId;
+  if(typeof params === 'undefined') params = {app_id : nodeBangumiAppId};
+
+  var url = '/user/' + username + '/collections/status';
+  return this.get(url, params, callback);
+};
+
 
 /**
  * A GET method that searches and returns a list of subjects by keywords
@@ -306,7 +328,7 @@ Bangumi.prototype.fetchUserCollections = function(username, subject_type, params
  * @param [params.type] {number} accept [1|2|3|4|6] (1.book 2.anime 3.music 4.game 5.live action)
  * @param [params.start] {number} result start index, used for paging
  * @param [params.max_results] {number} the number of entries returns, max 20
- * @param callback {function} callback function
+ * @param [callback] {function} callback function
  * @returns {Promise}
  */
 Bangumi.prototype.search = function(keywords, params, callback){
@@ -321,7 +343,7 @@ Bangumi.prototype.search = function(keywords, params, callback){
  * @param subject_id {number} id of target subject
  * @param params {object}
  * @param params.auth {string} authentication string used for validation of user identity
- * @param callback {function} callback function
+ * @param [callback] {function} callback function
  * @returns {Promise}
  */
 Bangumi.prototype.fetchCollection = function(subject_id, params, callback){
@@ -335,7 +357,7 @@ Bangumi.prototype.fetchCollection = function(subject_id, params, callback){
  * @param username {string} username or uid of target username
  * @param params {object}
  * @param params.auth {string} authentication string used for validation of user identity
- * @param callback {function} callback function
+ * @param [callback] {function} callback function
  * @returns {Promise}
  */
 Bangumi.prototype.fetchProgress = function(username, params, callback){
@@ -348,7 +370,7 @@ Bangumi.prototype.fetchProgress = function(username, params, callback){
  * @param params {object}
  * @param params.username {string} username or uid of target username
  * @param params.password {string} password for target user
- * @param callback {function} callback function
+ * @param [callback] {function} callback function
  * @returns {Promise}
  */
 
@@ -367,7 +389,7 @@ Bangumi.prototype.auth = function(params, callback){
  * @param [params.comment] {string} comment on target subject status update
  * @param [params.tags] {string} tags on target subject status update, separated by comma
  * @param [params.rating] {string} star rating on target subject, accept [0~10]
- * @param callback {function} callback function
+ * @param [callback] {function} callback function
  * @returns {Promise}
  */
 Bangumi.prototype.createCollection = function(subject_id, params, callback){
@@ -381,7 +403,7 @@ Bangumi.prototype.createCollection = function(subject_id, params, callback){
  * @param status {string} accept [wish|collect|do|on_hold|dropped]
  * @param params {object}
  * @param [params.ep_id] {string} a list of episode ids for batch processing, separated by comma
- * @param callback {function} callback function
+ * @param [callback] {function} callback function
  * @returns {Promise}
  */
 Bangumi.prototype.updateEpStatus = function(ep_id, status, params, callback){
@@ -395,7 +417,7 @@ Bangumi.prototype.updateEpStatus = function(ep_id, status, params, callback){
  * @param subject_id {number} id of target subject
  * @param params {object}
  * @param params.watched_eps {string} the number of episodes that user currently have watched
- * @param callback {function} callback function
+ * @param [callback] {function} callback function
  * @returns {Promise}
  */
 Bangumi.prototype.updateWatchedEps = function(subject_id, params, callback){
@@ -417,7 +439,7 @@ Bangumi.prototype.updateWatchedEps = function(subject_id, params, callback){
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Thu May 10 2018 17:47:21 GMT-0700 (Pacific Daylight Time)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Thu May 10 2018 18:32:35 GMT-0700 (Pacific Daylight Time)
 </footer>
 
 <script> prettyPrint(); </script>
