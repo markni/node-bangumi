@@ -164,7 +164,7 @@
 
             
 
-            <td class="description last">app id used for identify source</td>
+            <td class="description last">app id used for identify source, deprecated</td>
         </tr>
 
     
@@ -303,6 +303,11 @@
 
 
 
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>var Bangumi = require('bangumi');var bgm = new Bangumi({  access_token: "123456"});</code></pre>
 
 
 
@@ -536,6 +541,8 @@
     
 
     
+        <dt class="important tag-deprecated">Deprecated:</dt><dd><ul class="dummy"><li>since version 1.0.0, newer version of api will use oauth.</li></ul></dd>
+    
 
     
 
@@ -548,7 +555,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line349">line 349</a>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line363">line 363</a>
     </li></ul></dd>
     
 
@@ -600,7 +607,7 @@
     
 
     
-    <h4 class="name" id="createCollection"><span class="type-signature"></span>createCollection<span class="signature">(subject_id, params, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    <h4 class="name" id="createCollection"><span class="type-signature"></span>createCollection<span class="signature">(subject_id, params<span class="signature-attributes">opt</span>, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
     
 
     
@@ -692,6 +699,8 @@
             
                 <td class="attributes">
                 
+                    &lt;optional><br>
+                
 
                 
 
@@ -719,6 +728,8 @@
         
 
         
+        <th>Default</th>
+        
 
         <th class="last">Description</th>
     </tr>
@@ -744,6 +755,8 @@
             
                 <td class="attributes">
                 
+                    &lt;optional><br>
+                
 
                 
 
@@ -751,6 +764,12 @@
                 </td>
             
 
+            
+                <td class="default">
+                
+                    wish
+                
+                </td>
             
 
             <td class="description last">accept [wish|collect|do|on_hold|dropped]</td>
@@ -785,6 +804,10 @@
             
 
             
+                <td class="default">
+                
+                </td>
+            
 
             <td class="description last">comment on target subject status update</td>
         </tr>
@@ -818,6 +841,10 @@
             
 
             
+                <td class="default">
+                
+                </td>
+            
 
             <td class="description last">tags on target subject status update, separated by comma</td>
         </tr>
@@ -832,7 +859,7 @@
             <td class="type">
             
                 
-<span class="param-type">string</span>
+<span class="param-type">number</span>
 
 
             
@@ -851,8 +878,49 @@
             
 
             
+                <td class="default">
+                
+                </td>
+            
 
             <td class="description last">star rating on target subject, accept [0~10]</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>privacy</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">privacy control of this action, accepts [0|1] (0.open, 1.private)</td>
         </tr>
 
     
@@ -933,7 +1001,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line367">line 367</a>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line396">line 396</a>
     </li></ul></dd>
     
 
@@ -976,6 +1044,11 @@
     
 
 
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>bgm.createCollection(211567, {status: 'do', rating: 10});</code></pre>
 
 
 
@@ -1098,7 +1171,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line201">line 201</a>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line206">line 206</a>
     </li></ul></dd>
     
 
@@ -1150,7 +1223,7 @@
     
 
     
-    <h4 class="name" id="fetchCollection"><span class="type-signature"></span>fetchCollection<span class="signature">(subject_id, params, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    <h4 class="name" id="fetchCollection"><span class="type-signature"></span>fetchCollection<span class="signature">(subject_id, params<span class="signature-attributes">opt</span>, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
     
 
     
@@ -1242,6 +1315,8 @@
             
                 <td class="attributes">
                 
+                    &lt;optional><br>
+                
 
                 
 
@@ -1264,6 +1339,8 @@
 
         <th>Type</th>
 
+        
+        <th>Attributes</th>
         
 
         
@@ -1290,10 +1367,20 @@
             </td>
 
             
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
 
             
 
-            <td class="description last">authentication string used for validation of user identity</td>
+            <td class="description last">authentication string used for validation of user identity, deprecated</td>
         </tr>
 
     
@@ -1374,7 +1461,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line321">line 321</a>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line377">line 377</a>
     </li></ul></dd>
     
 
@@ -1558,6 +1645,8 @@
     
 
     
+        <dt class="important tag-deprecated">Deprecated:</dt><dd><ul class="dummy"><li>use fetchSubjectEps</li></ul></dd>
+    
 
     
 
@@ -1570,7 +1659,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line237">line 237</a>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line243">line 243</a>
     </li></ul></dd>
     
 
@@ -1622,7 +1711,7 @@
     
 
     
-    <h4 class="name" id="fetchProgress"><span class="type-signature"></span>fetchProgress<span class="signature">(username, params, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    <h4 class="name" id="fetchProgress"><span class="type-signature"></span>fetchProgress<span class="signature">(username, params<span class="signature-attributes">opt</span>, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
     
 
     
@@ -1675,6 +1764,9 @@
             
                 
 <span class="param-type">string</span>
+|
+
+<span class="param-type">number</span>
 
 
             
@@ -1714,6 +1806,8 @@
             
                 <td class="attributes">
                 
+                    &lt;optional><br>
+                
 
                 
 
@@ -1737,6 +1831,8 @@
         <th>Type</th>
 
         
+        <th>Attributes</th>
+        
 
         
 
@@ -1745,6 +1841,39 @@
     </thead>
 
     <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>subject_id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">the id of the subject user wants fetch progress</td>
+        </tr>
+
     
 
         <tr>
@@ -1762,10 +1891,20 @@
             </td>
 
             
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
 
             
 
-            <td class="description last">authentication string used for validation of user identity</td>
+            <td class="description last">authentication string used for validation of user identity, deprecated</td>
         </tr>
 
     
@@ -1846,7 +1985,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line335">line 335</a>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line348">line 348</a>
     </li></ul></dd>
     
 
@@ -1891,6 +2030,11 @@
 
 
 
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>bgm.fetchProgress(1, {subject_id:899}).then(console.log);</code></pre>
+
+
 
         
             
@@ -1898,7 +2042,7 @@
     
 
     
-    <h4 class="name" id="fetchSubject"><span class="type-signature"></span>fetchSubject<span class="signature">(subject_id, params, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    <h4 class="name" id="fetchSubject"><span class="type-signature"></span>fetchSubject<span class="signature">(subject_id, params<span class="signature-attributes">opt</span>, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
     
 
     
@@ -1989,6 +2133,8 @@
 
             
                 <td class="attributes">
+                
+                    &lt;optional><br>
                 
 
                 
@@ -2134,7 +2280,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line225">line 225</a>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line230">line 230</a>
     </li></ul></dd>
     
 
@@ -2177,6 +2323,207 @@
     
 
 
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="fetchSubjectEps"><span class="type-signature"></span>fetchSubjectEps<span class="signature">(subject_id, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A GET method that gets a list of episodes of a subject by subject id
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>subject_id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">id of target subject</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">callback function</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line255">line 255</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>bgm.fetchSubjectEps(211567);</code></pre>
 
 
 
@@ -2333,7 +2680,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line212">line 212</a>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line217">line 217</a>
     </li></ul></dd>
     
 
@@ -2529,6 +2876,37 @@
             
                 <td class="attributes">
                 
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">type of the collections, accepts [watching|all_watching]</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>responseGroup</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
                     &lt;optional><br>
                 
 
@@ -2540,7 +2918,40 @@
 
             
 
-            <td class="description last">accept [watching]</td>
+            <td class="description last">type of the collections, accepts [medium|small]</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>ids</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">ids of subjects users wants to fetch, this is very poorly implemented at the moment</td>
         </tr>
 
     
@@ -2621,7 +3032,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line250">line 250</a>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line272">line 272</a>
     </li></ul></dd>
     
 
@@ -2664,6 +3075,11 @@
     
 
 
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>bgm.fetchUserCollection(1, {cat:'all_watching', responseGroup: 'small'}).then(console.log)</code></pre>
 
 
 
@@ -2940,7 +3356,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line266">line 266</a>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line288">line 288</a>
     </li></ul></dd>
     
 
@@ -3174,7 +3590,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line285">line 285</a>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line307">line 307</a>
     </li></ul></dd>
     
 
@@ -3406,7 +3822,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line118">line 118</a>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line123">line 123</a>
     </li></ul></dd>
     
 
@@ -3615,7 +4031,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line188">line 188</a>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line193">line 193</a>
     </li></ul></dd>
     
 
@@ -3667,7 +4083,7 @@
     
 
     
-    <h4 class="name" id="search"><span class="type-signature"></span>search<span class="signature">(keywords, params, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    <h4 class="name" id="search"><span class="type-signature"></span>search<span class="signature">(keywords, params<span class="signature-attributes">opt</span>, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
     
 
     
@@ -3758,6 +4174,8 @@
 
             
                 <td class="attributes">
+                
+                    &lt;optional><br>
                 
 
                 
@@ -3921,7 +4339,7 @@
 
             
 
-            <td class="description last">the number of entries returns, max 20</td>
+            <td class="description last">the number of entries returns, max 25</td>
         </tr>
 
     
@@ -4002,7 +4420,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line306">line 306</a>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line330">line 330</a>
     </li></ul></dd>
     
 
@@ -4045,6 +4463,11 @@
     
 
 
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>bgm.search('天元突破');</code></pre>
 
 
 
@@ -4155,7 +4578,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line51">line 51</a>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line56">line 56</a>
     </li></ul></dd>
     
 
@@ -4189,7 +4612,7 @@
     
 
     
-    <h4 class="name" id="updateEpStatus"><span class="type-signature"></span>updateEpStatus<span class="signature">(ep_id, status, params, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    <h4 class="name" id="updateEpStatus"><span class="type-signature"></span>updateEpStatus<span class="signature">(ep_id, status, params<span class="signature-attributes">opt</span>, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
     
 
     
@@ -4290,7 +4713,7 @@
 
             
 
-            <td class="description last">accept [wish|collect|do|on_hold|dropped]</td>
+            <td class="description last">accept [watched|queue|drop|remove]</td>
         </tr>
 
     
@@ -4311,6 +4734,8 @@
 
             
                 <td class="attributes">
+                
+                    &lt;optional><br>
                 
 
                 
@@ -4456,7 +4881,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line381">line 381</a>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line412">line 412</a>
     </li></ul></dd>
     
 
@@ -4499,6 +4924,11 @@
     
 
 
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>bgm.updateEpStatus(7036,'drop');</code></pre>
 
 
 
@@ -4623,6 +5053,8 @@
         <th>Type</th>
 
         
+        <th>Attributes</th>
+        
 
         
 
@@ -4647,6 +5079,47 @@
             
             </td>
 
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">the number of episodes that user currently have watched</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>watched_vols</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
             
 
             
@@ -4732,7 +5205,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line395">line 395</a>
+        <a href="bangumi.js.html">bangumi.js</a>, <a href="bangumi.js.html#line429">line 429</a>
     </li></ul></dd>
     
 
@@ -4777,6 +5250,11 @@
 
 
 
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>bgm.updateWatchedEps(18462, {watched_eps: 10, watched_vols: 2});</code></pre>
+
+
 
         
     
@@ -4800,7 +5278,7 @@
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Thu May 10 2018 18:32:35 GMT-0700 (Pacific Daylight Time)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Thu May 10 2018 20:17:47 GMT-0700 (Pacific Daylight Time)
 </footer>
 
 <script> prettyPrint(); </script>
