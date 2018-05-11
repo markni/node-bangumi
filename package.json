@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "fix": "node node_modules/eslint/bin/eslint.js . --fix",
+    "fix": "eslint ./lib --fix",
     "docs": "./node_modules/.bin/jsdoc ./lib/bangumi.js -d ./docs"
   },
   "repository": {
@@ -19,8 +19,8 @@
     "bangumi",
     "api"
   ],
-  "author": "ruocaled",
-  "license": "ISC",
+  "author": "markni",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/markni/node-bangumi/issues"
   },
