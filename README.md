@@ -40,5 +40,9 @@ Getting Started
 		console.log(JSON.stringify(data));
 	});
 
+### Changelog
+See [Releases](https://github.com/markni/node-bangumi/releases/)
+
 ### Documentation
-See [docs](docs) and https://github.com/bangumi/api
+See [documentation site](http://markni.github.io/node-bangumi/) and [Bangumi API official docs]https://github.com/bangumi/api
+
