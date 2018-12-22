@@ -2,6 +2,9 @@ An simple Node.js client library for [Bangumi](https://bgm.tv) [REST API](https:
 
 Installation
 -----------------------
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/markni/node-bangumi.svg)](https://greenkeeper.io/)
+
 	npm install bangumi --save
 
 
