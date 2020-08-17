@@ -27,7 +27,7 @@
   "homepage": "https://github.com/markni/node-bangumi#readme",
   "devDependencies": {
     "eslint": "^4.18.1",
-    "jsdoc": "^3.5.5",
+    "jsdoc": "^3.6.5",
     "minami": "^1.2.3"
   }
 }
