@@ -1,7 +1,7 @@
 //Just a simple test for syntax error for now
-var assert = require('assert');
+const assert = require('assert');
 
-var Bangumi = require('../');
-var bgm = new Bangumi();
+const Bangumi = require('../');
+const bgm = new Bangumi();
 
-assert(bgm && bgm.hasOwnProperty('options'));
+assert(bgm && Object.prototype.hasOwnProperty.call(bgm, 'options'));

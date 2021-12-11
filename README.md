@@ -3,8 +3,6 @@ An simple Node.js client library for [Bangumi](https://bgm.tv) [REST API](https:
 Installation
 -----------------------
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/markni/node-bangumi.svg)](https://greenkeeper.io/)
-
 	npm install bangumi --save
 
 
@@ -30,16 +28,33 @@ bgm.setAccessToken(your_token);
 ### Examples of Usage
 
 #### Set up custom promise library
+
     bgm.setPromiseProvider(require('bluebird'));
 
+#### Using async await
+
+```javascript
+try {
+let data = await bgm.search('天元突破', {
+responseGroup: 'small',
+max_results: 2,
+start: 1,
+type: 2
+});
+console.log(JSON.stringify(data));
+} catch (e) {
+console.error(e);
+}
+``` 
+
 #### Using promise
+
 	bgm.search('天元突破',{
 		responseGroup: 'small',
 		max_results:2,
 		start:1,
 		type:2
 	}).then(data => console.log(JSON.stringify(data))).catch(console.error);
-
 
 #### Using callback
 	bgm.search('天元突破',{
