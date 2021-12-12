@@ -2,6 +2,6 @@
 const assert = require('assert');
 
 const Bangumi = require('../');
-const bgm = new Bangumi();
+const bgm = new Bangumi({debug: true});
 
 assert(bgm && Object.prototype.hasOwnProperty.call(bgm, 'options'));
