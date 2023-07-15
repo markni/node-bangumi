@@ -56,4 +56,3 @@ See [Releases](https://github.com/markni/node-bangumi/releases/)
 
 ### Documentation
 See [documentation site](http://markni.github.io/node-bangumi/) and [Bangumi API official docs](https://github.com/bangumi/api)
-
