@@ -1,9 +1,7 @@
-An simple Node.js client library for [Bangumi](https://bgm.tv) [REST API](https://github.com/bangumi/api).
+A simple Node.js client library for classic `v0` [Bangumi](https://bgm.tv) [REST API](https://github.com/bangumi/api/blob/master/open-api/v0.yaml).
 
 Installation
 -----------------------
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/markni/node-bangumi.svg)](https://greenkeeper.io/)
 
 	npm install bangumi --save
 
@@ -56,4 +54,3 @@ See [Releases](https://github.com/markni/node-bangumi/releases/)
 
 ### Documentation
 See [documentation site](http://markni.github.io/node-bangumi/) and [Bangumi API official docs](https://github.com/bangumi/api)
-
