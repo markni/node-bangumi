@@ -9,7 +9,7 @@
   "scripts": {
     "test": "node tests",
     "fix": "eslint ./lib --fix",
-    "docs": "./node_modules/.bin/jsdoc ./lib/bangumi.js -d ./docs -t ./node_modules/minami --readme ./README.md"
+    "docs": "npx jsdoc ./lib/bangumi.js -d ./docs -t node_modules/minami --readme ./README.md"
   },
   "repository": {
     "type": "git",

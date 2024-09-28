@@ -1,4 +1,4 @@
-A simple Node.js client library for legacy bangumi api [Bangumi](https://bgm.tv) [REST API](https://github.com/bangumi/api/blob/master/open-api/api.yml).
+A simple Node.js client library for legacy [Bangumi](https://bgm.tv) [REST API](https://github.com/bangumi/api/blob/master/open-api/api.yml).
 
 Installation
 -----------------------
